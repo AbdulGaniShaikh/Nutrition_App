@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Tournament App</string>
+    <string name="verificationDialog">An email has been sent to your email address containing an activation link. Please click on the link to activate your account.</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+    <string name="tcreated">Tournament Successfully created</string>
+
+    <string-array name="gameSpinner">
+        <item>Clash Of Clans</item>
+        <item>Critical Ops</item>
+        <item>Clash Royale</item>
+        <item>PUBG Mobile</item>
+        <item>Call Of Duty</item>
+        <item>Fortnite</item>
+        <item>Brawl Stars</item>
+        <item>Stand Off</item>
+
+        <item>Valorant</item>
+        <item>Overwatch</item>
+        <item>DOTA 2</item>
+        <item>Rocket League</item>
+        <item>Apex Legends</item>
+        <item>CS:GO</item>
+        <item>PUBG PC</item>
+        <item>COD: Modern Warfare</item>
+        <item>Fortnite PC</item>
+    </string-array>
+</resources>

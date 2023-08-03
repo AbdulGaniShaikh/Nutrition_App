@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/filter_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_topradius"
+            android:backgroundTint="@color/browser_actions_bg_grey">
+            <ImageButton
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/icon_close"
+                android:layout_marginVertical="5dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_alignParentEnd="true"
+                android:background="@color/browser_actions_bg_grey"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:background="@color/white">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sort by:"
+                android:textColor="@color/primaryDarkColor"
+                android:textSize="18sp"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Date : Ascending"
+                    android:textColor="@color/primaryDarkColor"
+                    android:textSize="18sp"
+                    android:buttonTint="@color/primaryDarkColor"
+                    android:layoutDirection="rtl"
+                    android:textAlignment="textStart"
+                    android:layout_gravity="start" />
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Date : Ascending"
+                    android:textColor="@color/primaryDarkColor"
+                    android:textSize="18sp"
+                    android:buttonTint="@color/primaryDarkColor"
+                    android:layoutDirection="rtl"
+                    android:textAlignment="textStart"
+                    android:layout_gravity="start" />
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Date : Ascending"
+                    android:textColor="@color/primaryDarkColor"
+                    android:textSize="18sp"
+                    android:buttonTint="@color/primaryDarkColor"
+                    android:layoutDirection="rtl"
+                    android:textAlignment="textStart"
+                    android:layout_gravity="start" />
+            </RadioGroup>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

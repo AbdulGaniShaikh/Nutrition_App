@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ActivityProfile"
+    tools:ignore="HardcodedText"
+    android:background="@color/browser_actions_bg_grey">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white">
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar_profile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:title="Profile"
+            app:titleTextColor="@color/primaryDarkColor"
+            app:navigationIconTint="@color/primaryDarkColor"
+            app:contentInsetStartWithNavigation="0dp"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:elevation="30dp"
+                android:layout_gravity="center_horizontal">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:cardElevation="10dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardUseCompatPadding="true">
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/avatar_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:src="@drawable/ic_avat1"
+                        android:contentDescription="Avatar" />
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-75dp"
+                android:background="@drawable/shape_topradius"
+                android:orientation="vertical"
+                android:elevation="10dp">
+                <TextView
+                    android:id="@+id/username_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tehgan"
+                    android:textColor="@color/primaryDarkColor"
+                    android:textAlignment="center"
+                    android:textSize="22sp"
+                    android:layout_marginTop="75dp"/>
+                <TextView
+                    android:id="@+id/desp_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I can 360 No-Scope like a pro but i cant customize my own profile"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:textAlignment="center"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/request_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_gravity="center"
+                    android:text="Send Buddy Request"
+                    android:background="@drawable/shape_allradius"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="20dp"
+                    android:drawableStart="@drawable/icon_add"
+                    android:drawablePadding="5dp"
+                    android:visibility="gone"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/browser_actions_bg_grey"
+                    android:layout_marginHorizontal="10dp"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp">
+
+                    <LinearLayout
+                        android:id="@+id/con_buddies_profile"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintEnd_toStartOf="@+id/view"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        >
+
+                        <TextView
+                            android:id="@+id/buddies_profile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="420"
+                            android:textColor="@color/primaryDarkColor"
+                            android:textSize="22sp"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Buddies"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="2dp"
+                        android:layout_height="0dp"
+                        android:background="@color/browser_actions_bg_grey"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/con_matches_profile"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/view"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent">
+
+                        <TextView
+                            android:id="@+id/matches_profile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="69"
+                            android:textColor="@color/primaryDarkColor"
+                            android:textSize="22sp"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Attending Matches"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+<!--                <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="2dp"-->
+<!--                    android:background="@color/browser_actions_bg_grey"-->
+<!--                    android:layout_marginHorizontal="10dp"/>-->
+
+<!--                <androidx.appcompat.widget.AppCompatButton-->
+<!--                    android:id="@+id/follow_profile"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:background="@drawable/shape_allradius"-->
+<!--                    android:text="Follow"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:layout_margin="10dp"/>-->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/browser_actions_bg_grey"
+                    android:layout_marginHorizontal="10dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Interests"
+                    android:textColor="@color/primaryDarkColor"
+                    android:textSize="18sp"
+                    android:padding="15dp"
+                    app:drawableEndCompat="@drawable/icon_add"
+                    app:drawableTint="@color/primaryDarkColor" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none" />
+
+                <TextView
+                    android:id="@+id/editprof_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edit Profile"
+                    android:paddingHorizontal="15dp"
+                    android:textColor="@color/primaryDarkColor"
+                    android:drawableStart="@drawable/icon_edit"
+                    android:drawableTint="@color/primaryDarkColor"
+                    android:drawablePadding="10dp"
+                    android:textSize="16sp"
+                    android:padding="15dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"/>
+                <TextView
+                    android:id="@+id/logout_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Logout"
+                    android:paddingHorizontal="15dp"
+                    android:textColor="@android:color/holo_red_light"
+                    android:drawableStart="@drawable/icon_logout"
+                    android:drawableTint="@android:color/holo_red_light"
+                    android:drawablePadding="10dp"
+                    android:textSize="16sp"
+                    android:padding="15dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

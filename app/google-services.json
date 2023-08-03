@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "107564121495",
+    "project_id": "tournament-app-b2aa7",
+    "storage_bucket": "tournament-app-b2aa7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107564121495:android:349f945f1728ceebc158d2",
+        "android_client_info": {
+          "package_name": "com.miniproject.tournamentapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "107564121495-f8lvva14g9p7hgo6mbf4msh30vrlrldq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-KfRfzqaFr4gYvcFmIN1F7RJvoMYPSVM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "107564121495-f8lvva14g9p7hgo6mbf4msh30vrlrldq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

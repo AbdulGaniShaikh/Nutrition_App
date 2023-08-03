@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityVerifyMail">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white">
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar_verifymail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:title="Verify Email"
+            app:titleTextColor="@color/primaryColor"
+            app:navigationIcon="@drawable/icon_app_32"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        android:padding="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please verify your Email"
+            android:textSize="25sp"
+            android:textColor="@color/primaryDarkColor"/>
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/img_verify_illustration"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/verificationDialog"
+            android:textSize="16sp"
+            android:textColor="@color/primaryDarkColor"/>
+        <TextView
+            android:id="@+id/timer_verifymail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Didn't recieve Verifcation mail? Click on Resend Button"
+            android:textSize="16sp"
+            android:textColor="@color/primaryDarkColor"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom">
+        <Button
+            android:id="@+id/resend_verifymail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resend"
+            android:textColor="@color/primaryDarkColor"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:paddingHorizontal="20dp"
+            android:layout_alignParentEnd="false"/>
+        <Button
+            android:id="@+id/next_verifymail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:textColor="@color/primaryDarkColor"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:drawableEnd="@drawable/icon_arrow_forward"
+            android:drawableTint="@color/primaryDarkColor"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:paddingHorizontal="20dp"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:id="@+id/con_user"
+    android:foreground="?attr/selectableItemBackground"
+    android:background="@color/white">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/dp_user"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_avat1"
+        app:shapeAppearanceOverlay="@style/CircleShape"/>
+
+    <TextView
+        android:id="@+id/name_user"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="UserName"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:layout_weight=".7"
+        android:textColor="@color/primaryDarkColor"/>
+
+    <ImageButton
+        android:id="@+id/remove_user"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/icon_delete"
+        android:layout_gravity="center"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        app:tint="@color/primaryDarkColor" />
+</LinearLayout>

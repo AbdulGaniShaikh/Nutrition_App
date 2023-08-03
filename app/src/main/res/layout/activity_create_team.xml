@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityCreateTeam">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white">
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar_createteam"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:title="Create Team"
+            app:titleTextColor="@color/primaryColor"
+            app:navigationIconTint="@color/primaryColor"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="30dp">
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:contentDescription="Login"
+                android:src="@drawable/img_createteam_illustration"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create Team!"
+                android:textColor="@color/primaryDarkColor"
+                android:textSize="25sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primaryDarkColor"
+                android:text="Enter the Team Details Below"
+                />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Team Name"
+                android:textColor="@color/primaryColor"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/name_txt_createteam"
+                style="@style/EditTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                app:errorIconDrawable="@drawable/icon_error">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/name_createteam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Team Name"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add a Description about the team"
+                android:textColor="@color/primaryColor"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/desp_createteam_txt"
+                style="@style/EditTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                app:errorIconDrawable="@drawable/icon_error">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/desp_createteam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Description"
+                    android:inputType="textMultiLine" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="*Note: You cant change your team name after creating the team"
+                android:textColor="@android:color/holo_red_dark"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/create_createteam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_allradius"
+                android:text="Create Team"
+                android:textColor="@color/white"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

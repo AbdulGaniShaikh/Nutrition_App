@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="HardcodedText">
+    <item
+        android:title="Tournament">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/browse_home"
+                    android:title="Browse Tournaments"/>
+                <item
+                    android:id="@+id/hosttournament_nav"
+                    android:title="Host Tournament" />
+                <item
+                    android:id="@+id/mytournaments_nav"
+                    android:title="My Tournaments" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Team">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/myteam_nav"
+                    android:title="My Team" />
+                <item
+                    android:id="@+id/createteam_nav"
+                    android:title="Create Team" />
+                <item
+                    android:id="@+id/findteam_nav"
+                    android:title="Find Team" />
+            </group>
+        </menu>
+    </item>
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/players_home"
+            android:title="Search Players"/>
+
+        <item
+            android:id="@+id/myprofile_home"
+            android:title="My Profile"/>
+
+    </group>
+</menu>

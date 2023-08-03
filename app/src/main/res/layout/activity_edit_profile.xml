@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityEditProfile"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white">
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar_settings"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:title="Edit Profile"
+            app:titleTextColor="@color/primaryDarkColor"
+            app:navigationIconTint="@color/primaryDarkColor"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/container_settings">
+
+            <ImageButton
+                android:id="@+id/left_settings"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/avatar_settings"
+                android:src="@drawable/icon_arrowleft"
+                app:tint="@color/cardview_dark_background" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/avatar_settings"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardUseCompatPadding="true"
+                android:layout_centerHorizontal="true">
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/avatar_editprof"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:src="@drawable/ic_avat1"
+                    android:contentDescription="Avatar" />
+            </androidx.cardview.widget.CardView>
+
+            <ImageButton
+                android:id="@+id/right_settings"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/avatar_settings"
+                android:src="@drawable/icon_arrowright"
+                app:tint="@color/cardview_dark_background" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/container_settings">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="10dp"/>
+            <EditText
+                android:id="@+id/desp_settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Description"
+                android:text="I can 360 No-Scope like a pro but i cant customize my own profile"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="10dp"
+                android:inputType="textCapSentences|textMultiLine"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Interests"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="10dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/browser_actions_bg_grey"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/save_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shape_allradius"
+            android:padding="10dp"
+            android:text="Save"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:clickable="true"
+            android:focusable="true" />
+    </RelativeLayout>
+
+</LinearLayout>

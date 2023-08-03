@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.miniproject.tournamentapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_app_512"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon_app_512"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TournamentApp">
+        <activity
+            android:name=".ActivityRequest"
+            android:exported="true" />
+        <activity
+            android:name=".ActivityTournament"
+            android:exported="true"></activity>
+        <activity
+            android:name=".ActivityMyTournament"
+            android:exported="true" />
+        <activity
+            android:name=".ActivityMyBuddies"
+            android:exported="true" />
+        <activity
+            android:name=".ActivityFriendRequest"
+            android:exported="true" />
+        <activity
+            android:name=".ActivityUser"
+            android:exported="true" />
+        <activity
+            android:name=".ActivityEditProfile"
+            android:exported="true" />
+        <activity
+            android:name=".ActivityMyTeam"
+            android:exported="true" />
+        <activity
+            android:name=".ActivityForgotPassword"
+            android:exported="true" />
+        <activity
+            android:name=".ActivityCreateTeam"
+            android:exported="true" />
+        <activity
+            android:name=".ActivityHostTournament"
+            android:exported="true" />
+        <activity
+            android:name=".ActivityProfile"
+            android:exported="true" />
+        <activity
+            android:name=".ActivityVerifyMail"
+            android:exported="true" />
+        <activity
+            android:name=".ActivitySignup"
+            android:exported="true" />
+        <activity
+            android:name=".ActivityLogin"
+            android:exported="true" />
+        <activity
+            android:name=".ActivityHome"
+            android:exported="true" />
+        <activity
+            android:name=".ActivityAuthentication"
+            android:exported="true" />
+        <activity
+            android:name=".ActivitySplash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

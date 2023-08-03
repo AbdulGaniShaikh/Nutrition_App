@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:id="@+id/con_userrequest"
+    android:background="@color/white">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/dp_userrequest"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_avat1"
+        android:background="@color/browser_actions_bg_grey"
+        app:shapeAppearanceOverlay="@style/CircleShape"/>
+
+    <TextView
+        android:id="@+id/name_userrequest"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="UserName"
+        android:textSize="18sp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:padding="10dp"
+        android:layout_weight=".7"
+        android:textColor="@color/primaryDarkColor"/>
+
+    <ImageButton
+        android:id="@+id/accept_userrequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_done"
+        android:layout_gravity="center"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        app:tint="@android:color/holo_green_light" />
+
+    <ImageButton
+        android:id="@+id/reject_userrequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_cancel"
+        android:layout_gravity="center"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        app:tint="@android:color/holo_red_light" />
+
+</LinearLayout>

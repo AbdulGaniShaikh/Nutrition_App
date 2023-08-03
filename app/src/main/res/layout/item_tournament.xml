@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="3dp"
+    app:cardCornerRadius="5dp"
+    tools:ignore="HardcodedText"
+    android:background="@drawable/color_gradient">
+
+    <LinearLayout
+        android:id="@+id/con_itemtour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground">
+
+        <TextView
+            android:id="@+id/name_itemtour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Skyesports Championship 3.0"
+            android:textColor="@color/primaryDarkColor"
+            android:padding="10dp"
+            android:drawablePadding="10dp"
+            app:drawableStartCompat="@drawable/icon_event"
+            app:drawableTint="@color/primaryDarkColor" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/color_gradient">
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+                <ImageView
+                    android:id="@+id/gameimg_itemtour"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_coc"/>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+<!--        <ImageView-->
+<!--            android:id="@+id/gameimg_itemtour"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="200dp"-->
+<!--            android:background="@android:color/transparent"-->
+<!--            android:contentDescription="Icon"-->
+<!--            android:scaleType="centerCrop"-->
+<!--            android:src="@drawable/img_gamecoc" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/date_itemtour"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="12/03/2021"
+                android:textColor="@color/primaryDarkColor"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textAlignment="center"
+                app:drawableStartCompat="@drawable/icon_calendar"
+                app:drawableTint="@color/primaryDarkColor" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/browser_actions_bg_grey"
+                android:layout_marginVertical="5dp"/>
+
+            <TextView
+                android:id="@+id/time_itemtour"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="04:00 pm"
+                android:textColor="@color/primaryDarkColor"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textAlignment="center"
+                app:drawableStartCompat="@drawable/icon_time"
+                app:drawableTint="@color/primaryDarkColor"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@color/browser_actions_bg_grey"
+                android:layout_marginHorizontal="5dp"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@color/browser_actions_bg_grey"
+                android:layout_marginHorizontal="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/joined_itemtour"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="12/40"
+                android:textColor="@color/primaryDarkColor"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textAlignment="center"
+                app:drawableStartCompat="@drawable/icon_users"
+                app:drawableTint="@color/primaryDarkColor" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="5dp"
+                android:background="@color/browser_actions_bg_grey"/>
+
+            <TextView
+                android:id="@+id/ptype_itemtour"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="SOLO"
+                android:textColor="@color/primaryDarkColor"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textAlignment="center"
+                app:drawableStartCompat="@drawable/icon_person"
+                app:drawableTint="@color/primaryDarkColor"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@color/browser_actions_bg_grey"
+                android:layout_marginHorizontal="5dp"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@color/browser_actions_bg_grey"
+                android:layout_marginHorizontal="5dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/game_itemtour"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Clash of Clans"
+                android:textAlignment="center"
+                android:textColor="@color/primaryDarkColor"
+                android:padding="10dp"
+                app:drawableStartCompat="@drawable/icon_game"
+                app:drawableTint="@color/primaryDarkColor" />
+
+            <TextView
+                android:id="@+id/join_itemtour"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/color_gradient"
+                android:text="View"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:padding="10dp"
+                app:drawableStartCompat="@drawable/icon_game"
+                app:drawableTint="@color/white"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
